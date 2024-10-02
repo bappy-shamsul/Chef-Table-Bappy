@@ -1,0 +1,16 @@
+.single-recipie{
+    background-color: beige;
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.cook-btn{
+    background-color: rgb(212, 209, 58);
+}
+
+.recipie-image{
+    width: 300px;
+    height: 200px;
+}

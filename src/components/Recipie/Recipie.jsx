@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
+import './Recipie.css'
 
 const Recipie = ({recipie}) => {
-    const {recipe_id, recipe_name, ingredients, preparing_time,calories} = recipie
+    const {image, recipe_id, recipe_name, ingredients, preparing_time,calories} = recipie
     return (
-        <div>
+        <div className='single-recipie'>
+            <img className='recipie-image' src={image} />
             <h3>ID: {recipe_id}</h3>
             <h3>Name: {recipe_name}</h3>
+        
             <div>
                 <h4>Ingredients: {ingredients.length}</h4>
                 {/* {
@@ -20,6 +23,9 @@ const Recipie = ({recipie}) => {
             </div>
             <p>Preparing Time: {preparing_time}</p>
             <p>Calories: {calories}</p>
+            <span>
+                <button className='cook-btn'>Want to cook</button>
+            </span>
         </div>
     );
 };

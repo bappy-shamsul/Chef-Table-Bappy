@@ -1,0 +1,10 @@
+.recipies-container{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.body-sub-container{
+    display: grid;
+    grid-template-columns: ;
+}
