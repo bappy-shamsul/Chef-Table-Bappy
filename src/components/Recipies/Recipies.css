@@ -1,10 +1,15 @@
+.container{
+    background-color: rgb(215, 206, 211);
+}
+
 .recipies-container{
-    background-color: grey;
+    background-color: rgba(181, 182, 229, 0.631);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .body-sub-container{
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }

@@ -11,7 +11,7 @@ const Recipies = () => {
             .then(data => setRecipies(data))
     }, [])
     return (
-        <div>
+        <div className='container'>
             <h1>Total Recipies: {recipies.length}</h1>
             {/* <h1>Total Recipies: {Array.isArray(recipies) ? recipies.length : 0}</h1> */}
             <div className='body-sub-container'>
@@ -24,7 +24,27 @@ const Recipies = () => {
 
                 <div>
                     <span>
-                        <h1>Want to Cook</h1>
+                            <h3>Want to Cook </h3>
+                            <table border="1" cellPadding="10" cellSpacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Time</th>
+                                        <th>Calories</th>
+                                    </tr>
+                                </thead>
+                               
+                                {/* <tbody>
+                                    {recipes.map((recipe, idx) => (
+                                        <tr key={idx}>
+                                            <td>{recipe.name}</td>
+                                            <td>{recipe.time}</td>
+                                            <td>{recipe.calories}</td>
+                                        </tr>
+                                    ))}
+                                </tbody> */}
+                            </table>
+                        
                     </span>
                 </div>
             </div>
