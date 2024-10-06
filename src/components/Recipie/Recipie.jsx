@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './Recipie.css'
 
-const Recipie = ({recipie}) => {
+const Recipie = ({recipie, handleRecipieNum}) => {
     const {image, recipe_id, recipe_name, ingredients, preparing_time,calories} = recipie
     return (
         <div className='single-recipie'>
@@ -24,7 +24,7 @@ const Recipie = ({recipie}) => {
             <p>Preparing Time: {preparing_time}</p>
             <p>Calories: {calories}</p>
             <span>
-                <button className='cook-btn'>Want to cook</button>
+                <button onClick={() => handleRecipieNum(recipie)} className='cook-btn'>Want to cook</button>
             </span>
         </div>
     );
@@ -32,6 +32,7 @@ const Recipie = ({recipie}) => {
 
 Recipie.propTypes = {
     recipie: PropTypes.object.isRequired,
+    handleRecipieNum: PropTypes.func
     
 }
 export default Recipie;
